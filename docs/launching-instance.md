@@ -1,0 +1,48 @@
+# Launching an instance
+Now that you have up a key pair set up, we can launch an instance -- i.e. a virtual machine (VM).
+
+### Details
+On the left panel of the dashboard select the `Compute` tab, then select `Instances`. Here is where you will see and be able to manage any instances (VMs) that you have created. To create a new one press the `Launch Instance` button to bring up a 'Wizard'.
+
+![](images/launch_instance_details.png)
+
+Give your instance a name and description. You can also choose an availability zone, e.g. `swinburne-01` or `monash-02`, but for the time being let's leave it on `Any Availability Zone` and let it choose automatically. Leave the `Count` field on `1` since we are only making one instance.
+
+### Source
+After pressing `Next` you can choose the source to create your instance from.
+
+![](images/launch_instance_source.png)
+
+We will boot from one of the base images that are provided on Nectar. Let's select the image with the latest Ubuntu release `NeCTAR Ubuntu 19.10 (Eoan) amd64` (at the time of this writing) by scrolling down and pressing the up arrow button next to it. Then scroll down and press next.
+
+### Flavour
+We now choose a 'flavour' for our instance, which is basically a choice of sizing for the compute, memory and storage capacity. What you can select depends on your project quota, but everyone with a trial project should be able to use one of the small flavours.
+
+Let's select `t3.small` by pressing the up arrow button next to it.
+
+![](images/launch_instance_flavour.png)
+
+
+### Security Groups
+Next, press `Security Groups` on the left panel, and select `ssh` to allow SSH connections in your virtual machine.
+
+![](images/launch_instance_security_groups.png)
+
+
+### Key Pair
+Finally, let's add the SSH Key to our virtual machine.
+
+> **Make sure you do this step, otherwise you won't be able to access your virtual machine!**
+
+Press `Key Pair` from the panel on the left, and make sure that the key you made earlier is in the 'allocated' list. If it's not then select it from the 'available' list.
+
+![](images/launch_instance_key_pair.png)
+
+### Launch
+Now press `Launch Instance` and watch your Virtual Machine spin up!
+
+In the dashboard, in the `Compute > Instances` pane, you should see your VM, and its status/state. You might have to wait a few minutes for it to build. You will know when it's done once it says `Active` in the status column.
+
+![](images/my_instance.png)
+
+> **Note:** If there is an error starting your VM, you may have to delete your broken instance and launch a new one.

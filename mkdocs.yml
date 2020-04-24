@@ -1,0 +1,33 @@
+site_name: Swinburne Research Cloud (Nectar) Quick-Guide
+site_url: null
+repo_url: null
+# repo_name:
+# edit_uri:
+site_description: null
+site_author: null
+copyright: null
+# google_analytics:
+# remote_branch:
+# remote_name:
+
+theme:
+    name: readthedocs
+    highlightjs: true
+    hljs_languages:
+        - bash
+    include_homepage_in_sidebar: true
+    prev_next_buttons_location: bottom
+    navigation_depth: 4
+    collapse_navigation: true
+    titles_only: false
+    sticky_navigation: true
+
+nav:
+  - Home: 'index.md'
+  - Get started: 'getting-started.md'
+  - The dashboard: 'dashboard.md'
+  - Security groups: 'security-groups.md'
+  - SSH keys: 'ssh-key.md'
+  - Launching an instance: 'launching-instance.md'
+  - Accessing your instance: 'accessing-instance.md'
+  - Viewing jupyeter notebooks: 'jupyter-notebooks.md'
