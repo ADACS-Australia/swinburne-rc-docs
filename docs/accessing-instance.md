@@ -50,3 +50,5 @@ We can now connect to our VM much easier by typing
 ```console
 ssh nectar
 ```
+
+For more information regarding SSH configurations, check out this guide [https://www.digitalocean.com/community/tutorials/how-to-configure-custom-connection-options-for-your-ssh-client](https://www.digitalocean.com/community/tutorials/how-to-configure-custom-connection-options-for-your-ssh-client).

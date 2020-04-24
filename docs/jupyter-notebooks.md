@@ -21,3 +21,5 @@ This will produce some output. Take note of the `token` that gets generated (it 
 
 Open up a web browser and navigate to [http://localhost:8000](). This should bring up jupyter notebook, but it will request you enter the `token` before you can continue.
 Alternatively, you can append the token to the end of the url like so [http://localhost:8000/?token=YOUR-TOKEN](), where you should replace `YOUR-TOKEN` with your token.
+
+For more information regarding remote connections to jupyter notebooks, check out this guide [https://www.digitalocean.com/community/tutorials/how-to-install-run-connect-to-jupyter-notebook-on-remote-server](https://www.digitalocean.com/community/tutorials/how-to-install-run-connect-to-jupyter-notebook-on-remote-server).
