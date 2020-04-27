@@ -7,10 +7,10 @@ To set and SSH key-pair, click the `Compute` tab on the left panel, and then sel
 
 ![](images/key_pairs.png)
 
-Here, you can either:
+Next, you can either:
 
-1. create a new SSH key pair; or
-2. import an existing public key on your local machine
+1. [create](#create-new-key) a new SSH key pair; or
+2. [import](#import-existing-key) an existing public key on your local machine (if you have one).
 
 ### Create new key
 To create a new key-pair, press `+ Create Key Pair`. Give your key a name and select SSH Key for the Key Type. Then press the `Create Key Pair` button.
