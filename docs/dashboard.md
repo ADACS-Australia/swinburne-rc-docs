@@ -3,13 +3,15 @@ Once you have logged in, you will be on the *Nectar Research Cloud Dashboard*. T
 
 ![](images/dashboard.png)
 
-For more information about the dashboard see the [Nectar Research Cloud Dashboard support page](https://support.ehelp.edu.au/support/solutions/articles/6000076111-nectar-research-cloud-dashboard).
+For now, we will just show you how to use the dashboard to launch a basic instance (Virtual Machine), and then we'll show you how to access the instance via SSH from your local machine.
 
-We will now show you how to launch a basic instance (Virtual Machine) from the dashboard, and how to access it via SSH from your local machine.
+However, before we continue...
 
-Before we continue, however...
+!!! note
+    In order to access your Virtual Machine you will need to make sure it is set up with:
 
-**NOTE:** In order to access your Virtual Machine you will need to make sure it is set up with:
+    1.  a _**security group**_ that allows SSH connections; and
+    2.  an _**SSH key pair**_
 
-1.  a _**security group**_ that allows SSH connections; and
-2.  an _**SSH key pair**_
+!!! info
+    You can find more information about the dashboard at the [Nectar Research Cloud Dashboard support page](https://support.ehelp.edu.au/support/solutions/articles/6000076111-nectar-research-cloud-dashboard).

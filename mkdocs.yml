@@ -1,4 +1,4 @@
-site_name: Swinburne Research Cloud (Nectar) Quick-Guide
+site_name: Swinburne Research Cloud Quickstart Guide
 site_url: null
 repo_url: null
 # repo_name:
@@ -9,6 +9,9 @@ copyright: null
 # google_analytics:
 # remote_branch:
 # remote_name:
+
+markdown_extensions:
+  - admonition
 
 theme:
     name: readthedocs
