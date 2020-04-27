@@ -34,3 +34,4 @@ nav:
   - Launching an instance: 'launching-instance.md'
   - Accessing your instance: 'accessing-instance.md'
   - Viewing jupyeter notebooks: 'jupyter-notebooks.md'
+  - Attaching volumes: 'volumes.md'
