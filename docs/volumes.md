@@ -1,7 +1,7 @@
 # Volumes
 Depening on your computing needs, the storage/disk space that is included in your instance may not be enough (e.g. `10GB` with `t3.small` flavour).
 
-Volumes are extra storage that you can to your instance, which is persisent. In other words, data saved to the volume is not destroyed when you delete the instance it was attached to. It can be mounted/unmounted to your virtual machine at any point.
+Volumes are extra storage that you can add to your instance, which are persistent. In other words, data saved to the volume is not destroyed when you delete the instance it was attached to. It can also be attached to your virtual machine at any point.
 
 ### Creating a volume
 
@@ -20,7 +20,7 @@ Specify a name and size for your volume, and make sure you pick the same availab
 ![](images/volumes_create_new.png)
 
 ### Attaching a volume
-Now that you've created the volume, you need to attach it to your instance.
+Now that you've created a volume, you need to attach it to your instance.
 
 On the `Volumes > Volumes` page, click the drop-down arrow next to your volume and select `Manage Attachments`.
 
@@ -39,7 +39,7 @@ To create a *filesystem* on your volume, log into your virtual machine and type
 ```console
 lsblk
 ```
-This list all the *block devices* on your machine
+This lists all the *block devices* on your machine
 
 ```console
 NAME   MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
