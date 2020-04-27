@@ -1,5 +1,5 @@
 # Launching an instance
-Now that you have up a key pair set up, we can launch an instance -- i.e. a virtual machine (VM).
+Now that you have setup an ssh key-pair and an ssh security group, we can launch an instance -- i.e. start a virtual machine (VM).
 
 ### Details
 On the left panel of the dashboard select the `Compute` tab, then select `Instances`. Here is where you will see and be able to manage any instances (VMs) that you have created. To create a new one press the `Launch Instance` button to bring up a 'Wizard'.
