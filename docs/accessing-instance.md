@@ -27,7 +27,6 @@ If you are connection for the first time it will ask for confirmation before con
 
 **You should now be successfully inside your new VM!**
 
-
 ### Add new host to SSH config file
 To make it easier to connect to your VM, we can add it as a host to your ssh config file.
 
@@ -40,12 +39,11 @@ nano ~/.ssh/config
 You may already have some configuration options listed.
 Let's add a new one at the top, which should look something like this:
 
-```bash
+```console
 Host nectar
    HostName = <ip-address>
    User = ubuntu
-   ForwardX11 = yes
-   IdentityFile ~/.ssh/nectarkey.pem
+   IdentityFile = ~/.ssh/nectarkey.pem
 ```
 where you should replace `<ip-address>` with the IP you found for your VM.
 
@@ -58,3 +56,31 @@ ssh nectar
 
 !!! seealso "See also"
     For more information regarding SSH configurations, check out this guide at [https://www.digitalocean.com/community/tutorials/how-to-configure-custom-connection-options-for-your-ssh-client](https://www.digitalocean.com/community/tutorials/how-to-configure-custom-connection-options-for-your-ssh-client).
+
+### GUIs and X11 Forwarding
+To interact with graphical applications on your virtual machine, you can use *X11 forwarding* when connecting via SSH. You will require an X server on your local machine for this --- most Linux distributions will have one. (For MacOS you may need to install XQuartz, if it's not already installed, and Windows users can install and use Xming).
+
+To enable X11 forwarding, simply add the `-X` option to your SSH command i.e.
+
+```console
+ssh -i ~/.ssh/nectarkey.pem -X <username>@<ip-address>
+```
+or
+```console
+ssh -X nectar
+```
+
+Alternatively, you can configure the host you created [previously](#add-new-host-to-ssh-config-file) to always enable X11 forwarding. Just add the line `ForwardX11 = yes` to your host like so
+
+```console
+Host nectar
+   HostName = <ip-address>
+   User = ubuntu
+   IdentityFile = ~/.ssh/nectarkey.pem
+   ForwardX11 = yes
+```
+
+Then you can still connect with just
+```console
+ssh nectar
+```
