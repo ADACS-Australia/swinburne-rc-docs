@@ -7,7 +7,7 @@ For now, we will just show you how to use the dashboard to launch a basic instan
 
 However, before we continue...
 
-!!! note
+!!! warning "Note"
     In order to access your Virtual Machine you will need to make sure it is set up with:
 
     1.  a _**security group**_ that allows SSH connections; and

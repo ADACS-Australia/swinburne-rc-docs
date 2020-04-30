@@ -1,25 +1,26 @@
 # Setting an SSH key
 
 !!! note
-    Nectar images are set up to be passwordless by default, and thus can only be accessed via a cryptographically signed public and private key set.
+    Nectar images are set up to be password-less by default, and thus can only be accessed via a cryptographically signed public and private key set.
 
-To set and SSH key-pair, click the `Compute` tab on the left panel, and then select `Key Pairs`.
+To set and SSH key pair, click the `Compute` tab on the left panel, and then select `Key Pairs`.
+If you have previously set an SSH key pair, then it will show up here, and you can reuse it for your instance. ([Skip](../launching-instance) this section if you want to reuse your key).
 
 ![](images/key_pairs.png)
 
-Next, you can either:
+If you've never set an SSH key pair, or you'd like to set a new one, then you can either:
 
 1. [create](#create-new-key) a new SSH key pair; or
 2. [import](#import-existing-key) an existing public key on your local machine (if you have one).
 
 ### Create new key
-To create a new key-pair, press `+ Create Key Pair`. Give your key a name and select SSH Key for the Key Type. Then press the `Create Key Pair` button.
+To create a new key pair, press `+ Create Key Pair`. Give your key a name and select SSH Key for the Key Type. Then press the `Create Key Pair` button.
 
 ![](images/create_key.png)
 
-This will download a private key to your downloads folder with the suffix `.pem`.
+This will download a private key to your downloads folder with the suffix `.pem`. In our case, the key is called `nectarkey.pem`.
 
-It is good practice to store the key in the `~/.ssh` directory. To move the key, open a terminal and type
+It is good practice to store the key in the `~/.ssh` directory. To move the key, open a **terminal** and type
 
 ```console
 mv ~/Downloads/nectarkey.pem ~/.ssh/.
@@ -39,4 +40,4 @@ Give the key a name, select SSH Key as the 'key type' and either paste the publi
     Make sure you are copying your **PUBLIC** key (should have the extension `.pub`) and not your **PRIVATE** key!
 
 !!! info "See also"
-    For a more detailed explanation of key-pair authentication for the Nectar research cloud, see the [SSH key tutorial page](http://training.nectar.org.au/package07/sections/createSSHKey.html){target="_blank"}.
+    For a more detailed explanation of key pair authentication for the Nectar research cloud, see the [SSH key tutorial page](http://training.nectar.org.au/package07/sections/createSSHKey.html){target="_blank"}.

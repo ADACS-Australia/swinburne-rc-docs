@@ -1,8 +1,11 @@
 # Launching an instance
-Now that you have setup an ssh key-pair and an ssh security group, we can launch an instance -- i.e. start a virtual machine (VM).
+Now that you have setup an ssh key pair and an ssh security group, we can launch an instance -- i.e. start a virtual machine (VM).
 
 ### Details
 On the left panel of the dashboard select the `Compute` tab, then select `Instances`. Here is where you will see and be able to manage any instances (VMs) that you have created. To create a new one press the `Launch Instance` button to bring up a 'Wizard'.
+
+!!! note
+    The `Launch Instance` button will be greyed out if you have maxed out your quota. You may need to delete any previous unused instances first, or you should make a request for more resources.
 
 ![](images/launch_instance_details.png)
 
@@ -35,7 +38,7 @@ Let's select `t3.small` by pressing the up arrow button next to it.
 ### Security Groups
 Next, press `Security Groups` on the left panel, and select `ssh` to allow SSH connections in your virtual machine.
 
-!!! note
+!!! tip
     If you forget to do this, you can always add a security group to your instance after it has launched.
 
 ![](images/launch_instance_security_groups.png)
@@ -54,9 +57,10 @@ Press `Key Pair` from the panel on the left, and make sure that the key you made
 ### Launch
 Now press `Launch Instance` and wait for your Virtual Machine to spin up!
 
-In the dashboard, in the `Compute > Instances` pane, you should see your VM, and its status/state. You might have to wait a few minutes for it to build. You will know when it's done once it says `Active` in the status column.
+In the dashboard, in the `Compute > Instances` pane, you should see your VM, and its status/state. You might have to wait a few minutes for it to build/spawn. You will know when it's done once it says `Active` in the status column.
+
 
 ![](images/my_instance.png)
 
-!!! warning "Note"
+!!! error
     If there is an error starting your VM, you may have to delete your broken instance and launch a new one.
