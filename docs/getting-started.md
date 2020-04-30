@@ -1,6 +1,6 @@
 # Getting started
 
-Head to [https://dashboard.rc.nectar.org.au](https://dashboard.rc.nectar.org.au/).
+Head to [https://dashboard.rc.nectar.org.au](https://dashboard.rc.nectar.org.au/){target="_blank"}.
 Australian researchers can log in with the Australian Access Federation (AAF).
 Simply select your university or institution (e.g. Swinburne) and log in with your usual credentials. If you have not used Nectar/Swin-RC before, then this will create an account for you.
 

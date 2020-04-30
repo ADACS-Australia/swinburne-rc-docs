@@ -39,4 +39,4 @@ Give the key a name, select SSH Key as the 'key type' and either paste the publi
     Make sure you are copying your **PUBLIC** key (should have the extension `.pub`) and not your **PRIVATE** key!
 
 !!! info "See also"
-    For a more detailed explanation of key-pair authentication for the Nectar research cloud, see the [SSH key tutorial page](http://training.nectar.org.au/package07/sections/createSSHKey.html).
+    For a more detailed explanation of key-pair authentication for the Nectar research cloud, see the [SSH key tutorial page](http://training.nectar.org.au/package07/sections/createSSHKey.html){target="_blank"}.

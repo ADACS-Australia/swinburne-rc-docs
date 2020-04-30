@@ -14,4 +14,4 @@ However, before we continue...
     2.  an _**SSH key pair**_
 
 !!! info
-    You can find more information about the dashboard at the [Nectar Research Cloud Dashboard support page](https://support.ehelp.edu.au/support/solutions/articles/6000076111-nectar-research-cloud-dashboard).
+    You can find more information about the dashboard at the [Nectar Research Cloud Dashboard support page](https://support.ehelp.edu.au/support/solutions/articles/6000076111-nectar-research-cloud-dashboard){target="_blank"}.

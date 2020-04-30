@@ -12,9 +12,11 @@ copyright: null
 
 markdown_extensions:
   - admonition
+  - attr_list
 
 theme:
     name: readthedocs
+    # name: material
     highlightjs: true
     hljs_languages:
         - bash

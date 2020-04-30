@@ -5,7 +5,7 @@
 
 Before you can access your virtual machine, you need to know a few pieces of information:
 
-1.  The *username* for your instance. The default usernames for the base images available on Nectar can be found [here](https://support.ehelp.edu.au/support/solutions/articles/6000106269-image-catalog#username). In our case the default username is `ubuntu`.
+1.  The *username* for your instance. The default usernames for the base images available on Nectar can be found [here](https://support.ehelp.edu.au/support/solutions/articles/6000106269-image-catalog#username){target="_blank"}. In our case the default username is `ubuntu`.
 2.  The *IP address* of your instance. This can be found under the `IP address` column in the instances tab on your dashboard.
 3.  The *path to the private key* on your computer. In our case it was `~/.ssh/nectarkey.pem`.
 
@@ -55,7 +55,7 @@ ssh nectar
 ```
 
 !!! seealso "See also"
-    For more information regarding SSH configurations, check out this guide at [https://www.digitalocean.com/community/tutorials/how-to-configure-custom-connection-options-for-your-ssh-client](https://www.digitalocean.com/community/tutorials/how-to-configure-custom-connection-options-for-your-ssh-client).
+    For more information regarding SSH configurations, check out this guide at [https://www.digitalocean.com/community/tutorials/how-to-configure-custom-connection-options-for-your-ssh-client](https://www.digitalocean.com/community/tutorials/how-to-configure-custom-connection-options-for-your-ssh-client){target="_blank"}.
 
 ### GUIs and X11 Forwarding
 To interact with graphical applications on your virtual machine, you can use *X11 forwarding* when connecting via SSH. You will require an X server on your local machine for this --- most Linux distributions will have one. (For MacOS you may need to install XQuartz, if it's not already installed, and Windows users can install and use Xming).
