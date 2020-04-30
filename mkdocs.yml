@@ -16,6 +16,7 @@ markdown_extensions:
 
 theme:
     name: readthedocs
+    custom_dir: theme_mods/
     # name: material
     highlightjs: true
     hljs_languages:

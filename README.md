@@ -35,6 +35,6 @@ mkdocs build
 - You can install MkDocs with `pip` or `conda` -- it requires a python installtion.
 - MkDocs uses python-markdown by default.
 - There are no extra dependencies.
-  - We use the *Read-The-Docs* theme, which comes built-in with MkDocs.
+  - We use the **ReadTheDocs** theme, which comes built-in with MkDocs.
   - The markdown extensions `admonition` and `attr_list` are included in python-markdown.
 
