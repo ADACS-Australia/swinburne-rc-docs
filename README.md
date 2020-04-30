@@ -1,10 +1,14 @@
 # Swinburne Research Cloud Quickstart Guide
-This repository contains the source files (markdown) for the quickstart guide.
+This repository contains the source files (markdown) for the quickstart guide [https://dliptai.github.io/Swinburne-RC-Quickstart-Guide]().
 
 The HTML for the webpage exists on the `gh-pages` branch of this repository, and is generated with the `mkdocs` tool.
 
 ## Instructions
 Pull the master branch of this repository.
+
+### Modifications
+Webpage configuration is contained in `mkdocs.yml`.
+Markdown for each page is in the `docs` directory.
 
 ### Preivew (optional)
 You can preview the webpage locally by executing the following command in the base directory of the repository
