@@ -1,4 +1,4 @@
-# Quickstart Guide
+# Swinburne Research Cloud - Quickstart Guide
 
 Welcome to the Swinburne Research Cloud quickstart guide. Here we'll show you how to quickly get up and running with a basic virtual machine.
 

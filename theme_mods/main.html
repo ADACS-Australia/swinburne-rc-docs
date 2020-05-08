@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{%- block site_name %}
+
+  {% if (config.theme.custom_options.logos) and (config.theme.custom_options.logos_only) %}
+    <!-- <a href="{{ nav.homepage.url|url }}"> -->
+    <a href="https://supercomputing.swin.edu.au">
+  {% else %}
+    <a href="{{ nav.homepage.url|url }}" class="icon icon-home"> {{ config.site_name }}
+  {% endif %}
+
+  {% if (config.theme.custom_options.logos) or (config.theme.custom_options.logos_only) %}
+    {# Not strictly valid HTML, but it's the only way to display/scale
+      it properly, without weird scripting or heaps of work
+    #}
+    <img src="{{ 'img/logo.png'|url }}" class="logo" alt="Logo" />
+    <img src="{{ 'img/logo2.png'|url }}" class="logo" alt="Logo" />
+  {% endif %}
+
+  </a>
+
+{%- endblock %}
