@@ -1,0 +1,25 @@
+version: "3"
+
+services:
+
+  nginx-server:
+    image: nginx:alpine
+    container_name: nginx-server
+    # expose:
+    #   - 8002
+    ports:
+      - "8002:80"
+    volumes:
+      - ./site:/usr/share/nginx/html:ro
+    depends_on:
+      - mkdocs
+
+  mkdocs:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    # The name for the custom image being built
+    image: python:mkdocs
+    container_name: mkdocs
+    volumes:
+      - ./:/mkdocs_build
