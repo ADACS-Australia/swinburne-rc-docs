@@ -24,6 +24,9 @@ Community images are created and shared by other Nectar users and are visible to
 ![](images/launch_instance_source.png)
 
 We will boot from one of the astronomy community images provided by ADACS, namely `ADACS-Astro Ubuntu 18.04 LTS (Bionic) amd64`. It is essentially the same as the base image `NeCTAR Ubuntu 18.04 LTS (Bionic) amd64` provided by Nectar, but it comes pre-installed with a bunch of useful software for astronomers.
+It includes build essentials such as git, make, gcc, g++, gfortran, etc.
+It also comes with an Anaconda installation of python 3, bundled with common packages like numpy, astropy, tensorflow, matplotlib, and more.
+You can of course see everything that's installed with the commands `apt list --installed` and `conda list` once you [connect](../accessing-instance/) to your VM.
 
 To select it, search for 'ADACS' in the search bar, and click the up arrow next to `ADACS-Astro Ubuntu 18.04 LTS (Bionic) amd64`. Then hit 'next' to continue
 
