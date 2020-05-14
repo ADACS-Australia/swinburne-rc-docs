@@ -38,5 +38,5 @@ nav:
   - SSH keys: 'ssh-key.md'
   - Launching an instance: 'launching-instance.md'
   - Accessing your instance: 'accessing-instance.md'
-  - Viewing jupyeter notebooks: 'jupyter-notebooks.md'
+  - Viewing jupyter notebooks: 'jupyter-notebooks.md'
   - Attaching volumes: 'volumes.md'
