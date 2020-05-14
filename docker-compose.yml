@@ -4,7 +4,7 @@ services:
 
   nginx-server:
     image: nginx:alpine
-    container_name: nginx-server
+    container_name: rcdocs
     # expose:
     #   - 8002
     ports:
