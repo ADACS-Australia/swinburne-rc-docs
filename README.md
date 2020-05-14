@@ -3,7 +3,7 @@ This repository contains the source files (markdown) for the quickstart guide, w
 
 The `Dockerfile` builds an image that can run `mkdocs build` in the root of the repository.
 
-`docker-compose.yml` describes two services, one to build the docs into html, and the other to launch an `nginx` server. The `nginx` container listens on port `8002`.
+`docker-compose.yml` describes two services, one to build the docs into html, and the other to launch an `nginx` server. The `nginx` container listens on port `9001`.
 
 ## Instructions to deploy
 Execute `docker-compose up -d --build`. This builds the site and then launches the server.
