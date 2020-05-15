@@ -3,7 +3,7 @@ site_url: https://supercomputing.swin.edu.au/rcdocs/
 repo_url: null
 # repo_name:
 # edit_uri:
-site_description: null
+site_description: "A guide for quickly getting set up with a virtual machine on Nectar"
 site_author: null
 copyright: null
 # google_analytics:
