@@ -30,6 +30,7 @@ If you are connecting for the first time it will ask for confirmation before con
 
 !!! tip "Success"
     You should now be inside your new VM! To exit, press `ctrl + d` or type `exit` and hit enter.
+    Remember to set your timezone, e.g. `sudo timedatectl set-timezone 'Australia/Melbourne'` (you can list all available timezones with `timedatectl list-timezones`).
 
 ### Add new host to SSH config file
 To make it easier to connect to your VM, we can add it as a host to your ssh config file.
