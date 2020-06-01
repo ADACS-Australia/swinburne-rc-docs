@@ -110,3 +110,62 @@ sudo chown $USER /mnt/my_volume
 ```
 
 If you don't do this, then it is owned by `root`, and you will need to prefix `sudo` to every command that will write to the filesystem.
+
+### Unmounting
+To disconnect your volume from the VM, it is recommended you unmount it first before detaching. You can unmount the mount point
+```console
+sudo umount /mnt/my_volume
+```
+or, to the same effect, you can unmount the device
+```console
+sudo umount /dev/vdb
+```
+Then detach the volume via the dashboard on the `Volumes > Volumes` page.
+
+!!! note
+    The command is `umount` not `unmount`.
+
+### Labels
+To give your volume a name that is consistent regardless of where it is attached, and regardless of what else is connected, you can give it a label with the `e2label` command. For example, to give the volume currently attached to `/dev/vdb` the label `storage`, type
+
+```console
+sudo e2label /dev/vdb storage
+```
+
+To confirm it worked, you can use `lsblk --fs`, which displays the labels of all devices on your machine (typically blank by default).
+
+You can now refer to this volume by its label `storage` when mounting
+
+```console
+sudo mount -L storage /mnt/my_volume
+```
+
+This is useful when connecting your volume to another machine where the attach point might be different (e.g. `/dev/vdc`, because a different volume is already attached to `/dev/vdb`). It's also useful to help distinguish volumes, particularly when they're the same size.
+
+### Auto mounting
+Whenever your machine is rebooted you will have to manually remount your volume, unless you set up auto mounting by making an entry in `/etc/fstab`.
+
+For this you'll need either the **label** or the **UUID** of your volume. You can check what they are with `lsblk --fs`.
+You'll also need to edit the fstab file in sudo mode, e.g.
+
+```console
+sudo nano /etc/fstab
+```
+
+The entry must be in the format
+```console
+<file system>   <mount point>    <type>  <options>       <dump>  <pass>
+```
+
+If you've labelled your volume, add this line to the bottom of the file
+```console
+LABEL=storage   /mnt/my_volume   ext4    defaults,nofail  0       2
+```
+Alternatively, you can refer to the file system with `UUID=`.
+
+To make sure the new entry is valid and to mount the device (if it hasn't been mounted already) type `sudo mount -a`. You shouldn't see any output if everything is in order.
+
+!!! seealso "See also"
+    For more details, see the fstab manual page by typing `man fstab`.
+
+
