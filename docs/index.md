@@ -6,4 +6,8 @@ The Swinburne Research Cloud is part of the Nectar Research Cloud, so for more d
 or visit the
 [Nectar Research Cloud Tutorials](https://tutorials.rc.nectar.org.au/){target="_blank"}.
 
+When joining Nectar, all researchers initially (and without applying for additional resources) get a trial project with 2 VCPUs (virtual CPUs) allocated for 3 months.
+This means you can run 1 Medium or 2 Small virtual machines for three months. Or 1 small VM for a total of 6 months.
+To get more resources, you need to join a project or apply for one.
+
 If you're unsure about how the cloud may be useful to you and your work, then have a look at some [suggested use cases](http://training.nectar.org.au/package03/sections/all.html){target="_blank"}.

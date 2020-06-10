@@ -33,7 +33,6 @@ theme:
 nav:
   - Home: 'index.md'
   - Get started: 'getting-started.md'
-  - The dashboard: 'dashboard.md'
   - Security groups: 'security-groups.md'
   - SSH keys: 'ssh-key.md'
   - Launching an instance: 'launching-instance.md'

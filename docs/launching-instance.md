@@ -12,23 +12,20 @@ On the left panel of the dashboard select the `Compute` tab, then select `Instan
 Give your instance a name and description. Leave the availability zone on `Any Availability Zone`, which allows Nectar to choose automatically, and leave the `Count` field on `1` since we are only making a single instance.
 
 ### Source
-After pressing `Next` you can choose the source for your instance. We will boot from an *image* --- a pre-prepared operating system.
+After pressing `Next` you can choose the source for your instance. We will boot from an *image* -- a pre-prepared operating system.
 
 There are several *public* images provided by Nectar that are available. These are updated on a semi regular basis and have a higher level of quality assurance than *community* images, but come pretty 'bare-bones'.
 
+![](images/launch_instance_source.png)
+
 Community images are created and shared by other Nectar users and are visible to everyone. You can find them through the search bar (note that they only show up once you begin searching).
+
+We will boot from one of public images provided by Nectar, namely `NeCTAR Ubuntu 18.04 LTS (Bionic) amd64`.
+To select the image, click the up arrow next to it. Then hit 'next' to continue.
+
 
 !!! warning
     Community images do not have quality assurance, and may include software with security vulnerabilities. Take care when launching with an image from an un-trusted source.
-
-![](images/launch_instance_source.png)
-
-We will boot from one of the astronomy community images provided by ADACS, namely `ADACS-Astro Ubuntu 18.04 LTS (Bionic) amd64`. It is essentially the same as the base image `NeCTAR Ubuntu 18.04 LTS (Bionic) amd64` provided by Nectar, but it comes pre-installed with a bunch of useful software for astronomers.
-It includes build essentials such as git, make, gcc, g++, gfortran, etc.
-It also comes with an Anaconda installation of python 3, bundled with common packages like numpy, astropy, tensorflow, matplotlib, and more.
-You can of course see everything that's installed with the commands `apt list --installed` and `conda list` once you [connect](../accessing-instance/) to your VM.
-
-To select it, search for 'ADACS' in the search bar, and click the up arrow next to `ADACS-Astro Ubuntu 18.04 LTS (Bionic) amd64`. Then hit 'next' to continue
 
 ### Flavour
 We now get to choose a 'flavour' for our instance, which is basically a choice of sizing for the compute, memory and storage capacity of the VM. What you can select depends on your project quota, but everyone with a trial project should be able to use one of the small flavours.
