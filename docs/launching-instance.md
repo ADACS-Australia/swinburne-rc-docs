@@ -65,3 +65,6 @@ In the dashboard, in the `Compute > Instances` pane, you should see your VM, and
 
 !!! error
     If there is an error starting your VM, you may have to delete your broken instance and launch a new one.
+
+!!! note
+    Even when an instance is shutoff, resources are still held for it, and resource time is still counted towards your allocation.
