@@ -23,7 +23,7 @@ Community images are created and shared by other Nectar users and are visible to
 We will boot from one of public images provided by Nectar, namely `NeCTAR Ubuntu 18.04 LTS (Bionic) amd64`.
 To select the image, click the up arrow next to it. Then hit 'next' to continue.
 
-Users with projects approved as an astronomy allocation on the Swinburne zone will also have access to a dedicated astronomy image, which is provisioned with some useful software packages.
+Users with projects approved as an astronomy allocation on the Swinburne zone will also have access to a set of additional [images](astronomy.md#adacs-image-catalogue), which have been provisioned with some useful software packages.
 
 !!! warning
     Community images do not have quality assurance, and may include software with security vulnerabilities. Take care when launching with an image from an un-trusted source.
