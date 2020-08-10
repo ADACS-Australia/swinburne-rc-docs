@@ -13,3 +13,7 @@ To get more resources, you need to join a project or apply for one.
 Australian astronomers can gain access to the reserved resources of the Swinburne Research Cloud through the [application](astronomy.md#applications) process, after you have [created a Nectar account](getting-started.md#log-in-create-account).
 
 If you're unsure about how the cloud may be useful to you and your work, then have a look at some [suggested use cases](http://training.nectar.org.au/package03/sections/all.html){target="_blank"}.
+
+---
+
+<sub><i>Dedicated astronomy access on the Swinburne cell within the NeCTAR Cloud network is funded by the Astronomy National Collaborative Research Infrastructure Strategy (NCRIS) via Astronomy Australia Limited (AAL) with support from Swinburne IT services and the Swinburne node of Astronomy Data and Computing Services (ADACS).</i></sub>
