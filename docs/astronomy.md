@@ -7,13 +7,23 @@ To apply for an astronomy related project on the Swinburne node, go to the dashb
 
 Complete all the compulsory fields as you would for a standard Nectar project, and select the resources/services you will require. For most people this will be `Compute` and `Volume` services.
 
-**To get access to the resources of the Swinburne node (reserved for Australian astronomers), make sure to include the following in the 'Special location requirements' field:**
+!!! important
+    To get access to the resources of the Swinburne node (reserved for Australian astronomers), make sure to include the following in the **'Special location requirements'** field:
 
 ```text
 Swinburne node: Astronomy project
 ```
 
+!!! important ""
+    Also, make sure to select **Swinburne** as the location if/when requesting **Volume Storage**.
+
+---
+
 ![](images/applications_swin-astro.png)
+
+---
+
+![](images/applications_volume-service.png)
 
 This will make sure your request is viewed by the correct person, and will fast-track your application.
 Following your submission, a system administrator may be in touch with you to confirm your resource requirements.
