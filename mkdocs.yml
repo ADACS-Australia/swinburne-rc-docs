@@ -32,11 +32,22 @@ theme:
 
 nav:
   - Home: 'index.md'
-  - Get started: 'getting-started.md'
-  - Security groups: 'security-groups.md'
-  - SSH keys: 'ssh-key.md'
-  - Launching an instance: 'launching-instance.md'
-  - Accessing your instance: 'accessing-instance.md'
-  - Viewing jupyter notebooks: 'jupyter-notebooks.md'
-  - Attaching volumes: 'volumes.md'
-  - Astronomy projects/applications: 'astronomy.md'
+
+  - Quickstart:
+    - Get started: 'getting-started.md'
+    - Security groups: 'security-groups.md'
+    - SSH keys: 'ssh-key.md'
+    - Launching an instance: 'launching-instance.md'
+    - Accessing your instance: 'accessing-instance.md'
+
+  - Astronomy users:
+    - Astronomy projects/applications: 'astronomy.md'
+
+  - Other useful tips:
+    - Hosts + SSH config: 'ssh-config.md'
+    - GUIs & X11 forwarding: 'gui-x11.md'
+    - Viewing jupyter notebooks: 'jupyter-notebooks.md'
+
+  - Advanced workflows:
+    - Attaching volumes: 'volumes.md'
+    - Advanced networking: 'networks.md'
