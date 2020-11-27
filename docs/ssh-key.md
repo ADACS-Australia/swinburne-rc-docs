@@ -3,7 +3,7 @@
 !!! note
     Nectar images are set up to be password-less by default, and thus can only be accessed via a cryptographically signed public and private key set.
 
-To set and SSH key pair, click the `Compute` tab on the left panel, and then select `Key Pairs`.
+To set an SSH key pair, click the `Compute` tab on the left panel, and then select `Key Pairs`.
 If you have previously set an SSH key pair, then it will show up here, and you can reuse it for your instance. ([Skip](../launching-instance/) this section if you want to reuse your key).
 
 ![](images/key_pairs.png)
