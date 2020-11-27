@@ -15,10 +15,9 @@ Webpage configuration is contained in `mkdocs.yml`.
 Markdown for each page is in the `docs` directory.
 
 ## Notes
-- [https://www.mkdocs.org/]()
+- [https://www.mkdocs.org/](https://www.mkdocs.org/)
 - You can install MkDocs with `pip` or `conda` -- it requires a python installtion.
 - MkDocs uses python-markdown by default.
 - There are no extra dependencies.
   - We use the **ReadTheDocs** theme, which comes built-in with MkDocs.
   - The markdown extensions `admonition` and `attr_list` are included in python-markdown.
-

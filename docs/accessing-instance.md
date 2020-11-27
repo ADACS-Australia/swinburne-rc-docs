@@ -126,5 +126,5 @@ Host nectar
 ```
 
 !!! info "See also"
-    [https://tutorials.rc.nectar.org.au/dns-with-designate/01-overview](){target="_blank"}
-     [https://support.ehelp.edu.au/support/solutions/articles/6000201311](){target="_blank"}
+    [https://tutorials.rc.nectar.org.au/dns-with-designate/01-overview](https://tutorials.rc.nectar.org.au/dns-with-designate/01-overview){target="_blank"}
+     [https://support.ehelp.edu.au/support/solutions/articles/6000201311](https://support.ehelp.edu.au/support/solutions/articles/6000201311){target="_blank"}
