@@ -167,5 +167,3 @@ To make sure the new entry is valid and to mount the device (if it hasn't been m
 
 !!! seealso "See also"
     For more details, see the fstab manual page by typing `man fstab`.
-
-
