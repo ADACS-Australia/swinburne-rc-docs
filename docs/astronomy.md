@@ -178,7 +178,7 @@ Includes an installation of MATLAB R2019b, along with the following products:
     Contact <openstack@adacs.org.au> if you require MATLAB products that are not in this list.
 
 #### ADACS (with Intel + IDL + Conda) - Ubuntu 18.04 LTS (Bionic) amd64
-As the name suggests, this image is a combination of the [basic](#adacs-ubuntu-1804-lts-bionic-amd64) image with the [Intel](#adacs-with-intel-ubuntu-1804-lts-bionic-amd64) and [IDL](#adacs-with-idl-ubuntu-1804-lts-bionic-amd64) images above.
+A combination of the [basic](#adacs-ubuntu-1804-lts-bionic-amd64) image with the [Intel](#adacs-with-intel-ubuntu-1804-lts-bionic-amd64) and [IDL](#adacs-with-idl-ubuntu-1804-lts-bionic-amd64) images above.
 
 #### ADACS Astronomy A (with Intel + IDL) - Ubuntu 18.04 LTS (Bionic) amd64
-As the name suggests, this image is a combination of the [Astronomy A](#adacs-astronomy-a-ubuntu-1804-lts-bionic-amd64) image with the [Intel](#adacs-with-intel-ubuntu-1804-lts-bionic-amd64) and [IDL](#adacs-with-idl-ubuntu-1804-lts-bionic-amd64) images above.
+A combination of the [Astronomy A](#adacs-astronomy-a-ubuntu-1804-lts-bionic-amd64) image with the [Intel](#adacs-with-intel-ubuntu-1804-lts-bionic-amd64) and [IDL](#adacs-with-idl-ubuntu-1804-lts-bionic-amd64) images above.
