@@ -50,5 +50,5 @@ nav:
     - Adding project members: 'members.md'
 
   - Advanced workflows:
-    - Attaching volumes: 'volumes.md'
+    - Volumes: 'volumes.md'
     - DNS: 'dns.md'
