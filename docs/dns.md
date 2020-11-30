@@ -1,6 +1,4 @@
-# Advanced networking
-
-## Adding a domain name/DNS record
+# Adding a domain name/DNS record
 You can associate your instance with a *domain name* by creating a *DNS record*, which is easier to remember than an IP address.
 Also, if the IP address of your instance happens to change (e.g. because you had to delete and relaunch the VM from the same image), you can simply update the DNS record **once** to point to the new IP address.
 This is useful if you connect from multiple machines, or if you have given others access to your VM.

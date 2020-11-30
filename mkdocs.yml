@@ -50,4 +50,4 @@ nav:
 
   - Advanced workflows:
     - Attaching volumes: 'volumes.md'
-    - Advanced networking: 'networks.md'
+    - DNS: 'dns.md'
