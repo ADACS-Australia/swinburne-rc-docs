@@ -15,20 +15,20 @@ markdown_extensions:
   - attr_list
 
 theme:
-    name: readthedocs
-    custom_dir: theme_mods/
-    custom_options:
-      logos: true
-      logos_only: true
-    highlightjs: true
-    hljs_languages:
-        - bash
-    include_homepage_in_sidebar: true
-    prev_next_buttons_location: bottom
-    navigation_depth: 4
-    collapse_navigation: true
-    titles_only: false
-    sticky_navigation: true
+  name: readthedocs
+  custom_dir: theme_mods/
+  custom_options:
+    logos: true
+    logos_only: true
+  highlightjs: true
+  hljs_languages:
+      - bash
+  include_homepage_in_sidebar: true
+  prev_next_buttons_location: bottom
+  navigation_depth: 4
+  collapse_navigation: true
+  titles_only: false
+  sticky_navigation: true
 
 nav:
   - Home: 'index.md'
