@@ -8,7 +8,7 @@ Volumes are extra storage that you can add to your instance, which are persisten
 !!! note
     Trial projects do **not** allow for any volumes by default. You must request to increase your quota, or join a project that has a non-zero quota for volumes before you can continue.
 
-To create a new volume, select `Volumes > Volumes` from the left panel on your dashboard, then press the `+ Create Volume` button.
+To create a new volume, select `Project > Volumes > Volumes` from the left panel on your dashboard, then press the `+ Create Volume` button.
 
 ![](images/volumes.png)
 
@@ -22,7 +22,7 @@ Specify a name and size for your volume, and make sure you pick the same availab
 ### Attaching a volume
 Now that you've created a volume, you need to attach it to your instance.
 
-On the `Volumes > Volumes` page, click the drop-down arrow next to your volume and select `Manage Attachments`.
+On the `Project > Volumes > Volumes` page, click the drop-down arrow next to your volume and select `Manage Attachments`.
 
 ![](images/volumes_manage.png)
 
@@ -120,7 +120,7 @@ or, to the same effect, you can unmount the device
 ```console
 sudo umount /dev/vdb
 ```
-Then detach the volume via the dashboard on the `Volumes > Volumes` page.
+Then detach the volume via the dashboard on the `Project > Volumes > Volumes` page.
 
 !!! note
     The command is `umount` not `unmount`.

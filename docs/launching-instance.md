@@ -58,7 +58,7 @@ Press `Key Pair` from the panel on the left, and make sure that the key you made
 ### Launch
 Now press `Launch Instance` and wait for your Virtual Machine to spin up!
 
-In the dashboard, in the `Compute > Instances` pane, you should see your VM, and its status/state. You might have to wait a few minutes for it to build/spawn. You will know when it's done once it says `Active` in the status column.
+In the dashboard, in the `Project > Compute > Instances` pane, you should see your VM, and its status/state. You might have to wait a few minutes for it to build/spawn. You will know when it's done once it says `Active` in the status column.
 
 
 ![](images/my_instance.png)
