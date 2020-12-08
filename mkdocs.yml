@@ -45,7 +45,7 @@ nav:
 
   - Other useful tips:
     - Hosts + SSH config: 'ssh-config.md'
-    - GUIs & X11 forwarding: 'gui-x11.md'
+    - GUIs + X11 forwarding: 'gui-x11.md'
     - Viewing jupyter notebooks: 'jupyter-notebooks.md'
     - Adding project members: 'members.md'
 
