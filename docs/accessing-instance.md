@@ -14,12 +14,12 @@ Before you can access your virtual machine, you need to know a few pieces of inf
 Open a terminal and type:
 
 ```console
-ssh -i ~/PATH/TO/YOUR/KEY <username>@<ip-address>
+$ ssh -i ~/PATH/TO/YOUR/KEY <username>@<ip-address>
 ```
 
 where you should replace `~/PATH/TO/YOUR/KEY` with the path to your ssh key, `<username>` with (in our case) `ubuntu`, and `<ip-address>` with the IP address for your instance. For **example**,
 ```console
-ssh -i ~/.ssh/nectarkey.pem ubuntu@115.146.87.187
+$ ssh -i ~/.ssh/nectarkey.pem ubuntu@115.146.87.187
 ```
 
 !!! info

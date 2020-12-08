@@ -18,7 +18,7 @@ You can find your DNS zone in the dashboard by navigating to `Project > DNS > Zo
 After you hit `Submit`, your instance should be accessible via your chosen domain name. For example,
 
 ```console
-ssh -i ~/.ssh/nectarkey.pem ubuntu@example.swin-dev.cloud.edu.au
+$ ssh -i ~/.ssh/nectarkey.pem ubuntu@example.swin-dev.cloud.edu.au
 ```
 
 Don't forget to update the `HostName` in your ssh config file(s)

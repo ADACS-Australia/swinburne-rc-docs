@@ -37,7 +37,7 @@ Since we created an *empty* volume, we cannot write anything to it just yet beca
 
 To create a *filesystem* on your volume, log into your virtual machine and type
 ```console
-lsblk
+$ lsblk
 ```
 This lists all the *block devices* on your machine
 
@@ -54,7 +54,7 @@ The first one, `vda`, is the root disk that is provided by the instance flavour.
 The other disk, `vdb`, is the new volume that we just attached, and has no partitions mounted. We will make an `ext4` type filesystem on the device with the `mkfs` command (short for make filesystem). This command typically requires superuser privileges (sudo), so type
 
 ```console
-sudo mkfs -t ext4 /dev/vdb
+$ sudo mkfs -t ext4 /dev/vdb
 ```
 
 which should produce the output
@@ -82,20 +82,20 @@ You can choose to mount it wherever you like, but it's good practice to mount it
 Let's create a new subdirectory within `/mnt` called `my_volume`
 
 ```console
-sudo mkdir /mnt/my_volume
+$ sudo mkdir /mnt/my_volume
 ```
 
 Now we can mount the device `/dev/vdb` at the *mount point* `/mnt/my_volume` with the command
 
 ```console
-sudo mount /dev/vdb /mnt/data
+$ sudo mount /dev/vdb /mnt/data
 ```
 
 If you list the devices again with `lsblk`, you will see that it is mounted.
 You can also see more information about your device with the `df` tool. Type the command
 
 ```console
-df -h /mnt/my_volume
+$ df -h /mnt/my_volume
 ```
 and you should see something like
 ```console
@@ -106,7 +106,7 @@ Filesystem      Size  Used Avail Use% Mounted on
 Finally, you can change the ownership of the mount point to be the current `$USER`
 
 ```console
-sudo chown $USER /mnt/my_volume
+$ sudo chown $USER /mnt/my_volume
 ```
 
 If you don't do this, then it is owned by `root`, and you will need to prefix `sudo` to every command that will write to the filesystem.
@@ -114,11 +114,11 @@ If you don't do this, then it is owned by `root`, and you will need to prefix `s
 ### Unmounting
 To disconnect your volume from the VM, it is recommended you unmount it first before detaching. You can unmount the mount point
 ```console
-sudo umount /mnt/my_volume
+$ sudo umount /mnt/my_volume
 ```
 or, to the same effect, you can unmount the device
 ```console
-sudo umount /dev/vdb
+$ sudo umount /dev/vdb
 ```
 Then detach the volume via the dashboard on the `Project > Volumes > Volumes` page.
 
@@ -129,7 +129,7 @@ Then detach the volume via the dashboard on the `Project > Volumes > Volumes` pa
 To give your volume a name that is consistent regardless of where it is attached, and regardless of what else is connected, you can give it a label with the `e2label` command. For example, to give the volume currently attached to `/dev/vdb` the label `storage`, type
 
 ```console
-sudo e2label /dev/vdb storage
+$ sudo e2label /dev/vdb storage
 ```
 
 To confirm it worked, you can use `lsblk --fs`, which displays the labels of all devices on your machine (typically blank by default).
@@ -137,7 +137,7 @@ To confirm it worked, you can use `lsblk --fs`, which displays the labels of all
 You can now refer to this volume by its label `storage` when mounting
 
 ```console
-sudo mount -L storage /mnt/my_volume
+$ sudo mount -L storage /mnt/my_volume
 ```
 
 This is useful when connecting your volume to another machine where the attach point might be different (e.g. `/dev/vdc`, because a different volume is already attached to `/dev/vdb`). It's also useful to help distinguish volumes, particularly when they're the same size.
@@ -149,7 +149,7 @@ For this you'll need either the **label** or the **UUID** of your volume. You ca
 You'll also need to edit the fstab file in sudo mode, e.g.
 
 ```console
-sudo nano /etc/fstab
+$ sudo nano /etc/fstab
 ```
 
 The entry must be in the format

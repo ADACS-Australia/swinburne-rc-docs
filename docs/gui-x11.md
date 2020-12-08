@@ -4,11 +4,11 @@ To interact with graphical applications on your virtual machine, you can use *X1
 To enable X11 forwarding, simply add the `-X` option to your SSH command i.e.
 
 ```console
-ssh -i ~/.ssh/nectarkey.pem -X <username>@<ip-address>
+$ ssh -i ~/.ssh/nectarkey.pem -X <username>@<ip-address>
 ```
 or
 ```console
-ssh -X nectar
+$ ssh -X nectar
 ```
 
 Alternatively, you can configure the host you created [previously](../ssh-config/) to always enable X11 forwarding. Just add the line `ForwardX11 = yes` to your host like so
@@ -23,5 +23,5 @@ Host nectar
 
 Then you can still connect with just
 ```console
-ssh nectar
+$ ssh nectar
 ```

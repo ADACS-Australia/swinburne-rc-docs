@@ -23,13 +23,13 @@ This will download a private key to your downloads folder with the suffix `.pem`
 It is good practice to store the key in the `~/.ssh` directory. To move the key, open a **terminal** and type
 
 ```console
-mv ~/Downloads/nectarkey.pem ~/.ssh/.
+$ mv ~/Downloads/nectarkey.pem ~/.ssh/.
 ```
 
 Then, change its permissions to be more secure by typing
 
 ```console
-chmod 600 ~/.ssh/nectarkey.pem
+$ chmod 600 ~/.ssh/nectarkey.pem
 ```
 
 ### Import existing key

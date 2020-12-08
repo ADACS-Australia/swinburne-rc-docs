@@ -6,13 +6,13 @@ When launching a jupyter notebook server, it will typically be run on port `8888
 
 Let's connect to our instance again, but this time type
 ```console
-ssh -L 8000:localhost:8888 nectar
+$ ssh -L 8000:localhost:8888 nectar
 ```
 where the `-L` option specifies the ports to connect i.e. creates a tunnel. You shouldn't see anything different to when you connected previously.
 
 Now launch a Jupyter notebook on the remote machine
 ```console
-jupyter notebook --no-browser --port=8888
+$ jupyter notebook --no-browser --port=8888
 ```
 We specify the port to be sure that it is the same as the one that we setup our ssh tunnel with, and we requested no web browser, since the remote machine (typically) doesn't have one.
 

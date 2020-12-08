@@ -4,7 +4,7 @@ To make it easier to connect to your VM, we can add it as a host to your ssh con
 On your local machine, open the file `~/.ssh/config` with your favourite editor, e.g. `nano`
 
 ```console
-nano ~/.ssh/config
+$ nano ~/.ssh/config
 ```
 
 You may already have some configuration options listed.
@@ -21,7 +21,7 @@ We have chosen `nectar` as the *alias* for our VM, but you can choose whatever n
 Once you save the config file, you can ssh into your machine by simply typing
 
 ```console
-ssh nectar
+$ ssh nectar
 ```
 
 !!! tip
