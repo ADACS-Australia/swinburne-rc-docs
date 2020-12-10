@@ -53,3 +53,4 @@ nav:
     - Volumes: 'volumes.md'
     - DNS: 'dns.md'
     - Networks: 'networks.md'
+    - APIs + CLI: 'apis_cli.md'
