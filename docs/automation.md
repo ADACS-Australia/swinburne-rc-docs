@@ -371,7 +371,7 @@ Destroy complete! Resources: 8 destroyed.
 ## Packer
 [Packer](https://www.packer.io/){target="_blank"} is a software tool for building automated machine images. It encourages you to automate the creation and maintenance of pre-baked machine images you can launch instances from, which have all your required software packages pre-installed and pre-configured. OpenStack is just one of the many 'builders' Packer can interface with, and it also integrates natively with a number of configuration management system such as Ansible and Puppet.
 
-Packer uses a simple JSON template file and roughly follows these steps when run:
+Packer uses a simple JSON template file and roughly follows these steps when executed:
 
 1. Launches an instance from an existing image.
 2. Connects to the instance and runs a configuration management tool (or shell script) to install and configure software.
@@ -458,4 +458,128 @@ $ openstack image list
 | f8a27137-5679-4967-8008-fc8336de4a6d | fedora-coreos-32              | active |
 | 7f866629-8fe7-4e24-8bb2-285a25e2d4ba | my_image                      | active |
 +--------------------------------------+-------------------------------+--------+
+```
+
+## Ansible
+[Ansible](https://www.ansible.com/){target="_blank"} is an open source IT automation engine, which allows you to automate repetitive system administration tasks. It only requires Python and SSH to be installed on systems that you wish to manage. Ansible uses simple YAML 'playbooks', which you can version control, making your configuration reproducible and easy to read. It comes with a large number of 'modules' that can do almost any administrative task you can think of.
+
+For example, say you have a number of machines on your cloud that you wish to keep up to date and ensure that Nginx is installed on each of them. Instead of manually connecting to each machine and doing the updates, you can write a simple playbook that uses the [yum module](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/yum_module.html){target="_blank"}:
+
+```yaml
+---
+
+- name: This is my playbook
+  hosts: all
+  gather_facts: yes
+  become: no
+
+  tasks:
+
+    - name: Upgrade
+      become: yes
+      yum:
+        name: '*'
+        state: latest
+        update_cache: yes
+
+    - name: Ensure these packages are installed and latest
+      become: yes
+      yum:
+        name:
+          - nginx
+        state: latest
+```
+
+Then, declare the connection details for each of the instances you wish to manage in an 'inventory':
+```yaml
+---
+
+all:
+  hosts:
+    VM_0:
+      ansible_host: 136.186.108.210
+    VM_1:
+      ansible_host: 136.186.108.16
+    VM_2:
+      ansible_host: 136.186.108.204
+    VM_3:
+      ansible_host: 136.186.108.64
+    VM_4:
+      ansible_host: 136.186.108.55
+  vars:
+    ansible_user: ec2-user
+    ansible_ssh_common_args: -o StrictHostKeyChecking=no
+```
+
+Run the playbook, using the inventory you created, and watch ansible do it's magic.
+``` console
+$ ansible-playbook -i my_inventory.yml my_playbook.yml
+
+PLAY [This is my playbook] ********************************************************************************************
+
+TASK [Gathering Facts] ************************************************************************************************
+ok: [VM_1]
+ok: [VM_2]
+ok: [VM_3]
+ok: [VM_4]
+ok: [VM_0]
+
+TASK [Upgrade] ********************************************************************************************************
+changed: [VM_2]
+changed: [VM_4]
+changed: [VM_1]
+changed: [VM_3]
+changed: [VM_0]
+
+TASK [Ensure these packages are installed and latest] *****************************************************************
+changed: [VM_2]
+changed: [VM_1]
+changed: [VM_3]
+changed: [VM_0]
+changed: [VM_4]
+
+PLAY RECAP ************************************************************************************************************
+VM_0                       : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+VM_1                       : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+VM_2                       : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+VM_3                       : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+VM_4                       : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+
+```
+
+At the end, Ansible will show you a recap of what happened on each server. If you rerun the playbook, Ansible will only repeat tasks if they are required to achieve the desired state defined by your playbook.
+
+```console
+$ ansible-playbook -i my_inventory.yml my_playbook.yml
+
+PLAY [This is my playbook] ********************************************************************************************
+
+TASK [Gathering Facts] ************************************************************************************************
+ok: [VM_4]
+ok: [VM_0]
+ok: [VM_1]
+ok: [VM_3]
+ok: [VM_2]
+
+TASK [Upgrade] ********************************************************************************************************
+ok: [VM_2]
+ok: [VM_4]
+ok: [VM_1]
+ok: [VM_0]
+ok: [VM_3]
+
+TASK [Ensure these packages are installed and latest] *****************************************************************
+ok: [VM_2]
+ok: [VM_3]
+ok: [VM_1]
+ok: [VM_4]
+ok: [VM_0]
+
+PLAY RECAP ************************************************************************************************************
+VM_0                       : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+VM_1                       : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+VM_2                       : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+VM_3                       : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+VM_4                       : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+
 ```
