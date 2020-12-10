@@ -41,7 +41,7 @@ Click next to configure your subnet's gateway.
 
 Make sure `Enable DHCP` is selected if you want IP addresses to be automatically allocated to devices as they connect to the network. Below this, you can choose a subset of IP addresses for the allocation pool, or if you leave it blank the whole CIDR range of the subnet will be allowed (except the first address, which is the gateway, and the last address, which is the broadcast address).
 
-By default, the Google DNS servers are automatically added/used, but you may add other ones.
+By default, the Google DNS servers are automatically used, but you may add other ones.
 
 Click `Create` to finish making your network + subnet. You should now see it listed among all the other networks available to your project.
 
@@ -67,7 +67,7 @@ Then select `+ Add Interface`, select your network from the dropdown box, and cl
 
 Now when you launch an instance with this network, it will have access to the outside internet, and thus be able to access the OpenStack metadata service on boot to inject your SSH key and determine its own hostname.
 
-Note however, that your instance will still not be accessible from the internet, as it does not have a public IP address.
+Note, however, that your instance will still not be accessible from the internet, as it does not have a public IP address.
 
 ## Floating IP
 Advanced networking also allows the use of Floating IP addresses. Floating IP addresses are IP addresses dedicated to a project (subject to quota allowance) and can be attached to an instance that is part of a private network in order to create a public presence for that instance. Because Floating IP addresses are dedicated to a project, it makes it possible to maintain a public IP address for an instance after termination.

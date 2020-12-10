@@ -511,7 +511,7 @@ all:
     ansible_ssh_common_args: -o StrictHostKeyChecking=no
 ```
 
-Run the playbook, using the inventory you created, and watch ansible do it's magic.
+Run the playbook, using the inventory you created, and watch ansible do its magic.
 ``` console
 $ ansible-playbook -i my_inventory.yml my_playbook.yml
 
