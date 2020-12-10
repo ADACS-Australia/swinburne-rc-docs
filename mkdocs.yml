@@ -23,6 +23,7 @@ theme:
   highlightjs: true
   hljs_languages:
       - bash
+      - python
   include_homepage_in_sidebar: true
   prev_next_buttons_location: bottom
   navigation_depth: 4
@@ -54,3 +55,4 @@ nav:
     - DNS: 'dns.md'
     - Networks: 'networks.md'
     - APIs + CLI: 'apis_cli.md'
+    - Cloud Automation: 'automation.md'
