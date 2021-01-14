@@ -25,8 +25,10 @@ Swinburne node: Astronomy project
 
 ![](images/applications_volume-service.png)
 
-This will make sure your request is viewed by the correct person, and will fast-track your application.
-Following your submission, a system administrator may be in touch with you to confirm your resource requirements.
+**To fast-track your application, we also request that you let us know you have submitted via email at <openstack@adacs.org.au>.**
+
+This is to make sure your application is filtered out from standard national allocation requests, and that it is viewed by the correct person.
+Following your submission, a system administrator may be in touch with you to discuss your resource requirements.
 
 !!! Note
     The root disk on images is only 30GB, so most user will require volume storage. You should also keep in mind that volume storage is persistent, while the root disk on images is not. i.e. changes made to the root disk will be gone when you shut down your instance, unless you take a snapshot.
