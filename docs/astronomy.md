@@ -1,21 +1,21 @@
 # Astronomy projects/applications
 
+!!! note
+    We highly recommend you familiarise yourself with [launching a simple VM](getting-started.md) inside a trial project **before** going through the application process.
+
 ## Applications
-To apply for an astronomy related project on the Swinburne node, go to the dashboard and click the `Allocations` tab on the left panel, and then select `New Request`.
+To apply for an astronomy project on the Swinburne zone, follow the same steps as when applying for a national allocation and make sure to mention **Swinburne** as your location requirement.
+
+**To fast-track your application, we also request that you let us know you have submitted an application via email at <openstack@adacs.org.au>.**
+
+Go to the dashboard and click the `Allocations` tab on the left panel, and then select `New Request`.
 
 ![](images/applications.png)
 
 Complete all the compulsory fields as you would for a standard Nectar project, and select the resources/services you will require. For most people this will be `Compute` and `Volume` services.
 
-!!! important
-    To get access to the resources of the Swinburne node (reserved for Australian astronomers), make sure to include the following in the **'Special location requirements'** field:
-
-```text
-Swinburne node: Astronomy project
-```
-
-!!! important ""
-    Also, make sure to select **Swinburne** as the location if/when requesting **Volume Storage**.
+Remember to mention **Swinburne** under the **'Special location requirements'** field.
+Also make sure to select **Swinburne** as the location when requesting **Volume Storage**.
 
 ---
 
@@ -25,13 +25,10 @@ Swinburne node: Astronomy project
 
 ![](images/applications_volume-service.png)
 
-**To fast-track your application, we also request that you let us know you have submitted via email at <openstack@adacs.org.au>.**
 
-This is to make sure your application is filtered out from standard national allocation requests, and that it is viewed by the correct person.
-Following your submission, a system administrator may be in touch with you to discuss your resource requirements.
-
-!!! Note
-    The root disk on images is only 30GB, so most user will require volume storage. You should also keep in mind that volume storage is persistent, while the root disk on images is not. i.e. changes made to the root disk will be gone when you shut down your instance, unless you take a snapshot.
+Remember to email us at <openstack@adacs.org.au> once you have submitted.
+This is ensure that your application is correctly filtered out from standard national allocation requests.
+Following your submission, a system administrator may be in touch with you to discuss your resource requirements. Applications are usually approved within a week of submission.
 
 ---
 

@@ -1,28 +1,41 @@
 # Swinburne Research Cloud - Quickstart Guide
 
-Welcome to the Swinburne Research Cloud quickstart guide. Here we'll show you how to quickly get up and running with a basic virtual machine.
+Welcome! Here we will show you how to quickly get up and running with a **basic virtual machine**, also referred to as an **'instance'**, on the Swinburne Research Cloud.
+
+For new users, we recommend following the steps in this guide carefully, using a trial project.
+
+!!! info " TLDR - What is it the Swinburne Research Cloud?"
+    It is a **FREE alternative** to commercial clouds, such as AWS and Microsoft Azure, for Australian researchers in astronomy and astrophysics.
 
 ## Introduction
-The Swinburne Research Cloud is what is know as **Infrastructure-as-a-Service** (IaaS), providing Australian astronomers with on-demand, raw IT infrastructure such as CPUs, networking and storage, in a flexible and scalable manner.
+The Swinburne Research Cloud is one of the physical nodes of the national **Nectar Research Cloud**, which is implemented and managed using **OpenStack**, an open source cloud computing framework.
 
-Typical uses of the Swinburne Research Cloud include:
+It is what is know as **Infrastructure-as-a-Service** (IaaS), providing researchers with on-demand, raw IT infrastructure such as CPUs, networking and storage, in a flexible and scalable manner.
+In simpler terms: it gives you access to **virtual hardware that you can administer in whatever way you choose**.
+
+Typical uses include:
 
 - Deploying compute resources for running simulation and data analysis software.
 - Hosting of websites, databases, web applications and other online resources.
 - Establishing customised access to online data sets and data analysis tools.
 - Hosting of online research tools and domain-specific virtual laboratories.
 
-The Swinburne Research Cloud is part of the Nectar Research Cloud, so for more detailed instructions you can also go to the [Nectar Knowledge Base](https://support.ehelp.edu.au/support/solutions){target="_blank"}
-or visit the
-[Nectar Research Cloud Tutorials](https://tutorials.rc.nectar.org.au/){target="_blank"}.
+### Trial Project
+When first joining, all researchers initially get a trial project with 2 virtual CPUs allocated for 3 months.
+This means you can run 1 medium or 2 small virtual machines for three months. Or 1 small VM for a total of 6 months.
 
-## Trial projects
-When joining Nectar, all researchers initially (and without applying for additional resources) get a trial project with 2 VCPUs (virtual CPUs) allocated for 3 months.
-This means you can run 1 Medium or 2 Small virtual machines for three months. Or 1 small VM for a total of 6 months.
-To get more resources, you need to join a project or apply for one.
 
-## Astronomers
-Australian astronomers can gain access to the reserved resources of the Swinburne Research Cloud through the [application](astronomy.md#applications) process, after you have [created a Nectar account](getting-started.md#log-in-create-account).
+### Astronomers
+To get more resources, you need to join a full project or apply for one. Australian Austromers can request access to resources available only to them on the Swinburne zone. But we recommend going through the steps of [launching a simple virtual machine](getting-started.md) in your trial project before applying.
+
+## Help
+- If you get stuck or just want more information, feel free to email us at <openstack@adacs.org.au>.
+- A training video is also available [here](https://adacs.org.au/project/openstack-training-session-2021/){target="_blank"}.
+
+---
+
+!!! info "Other resources"
+    For more information about Nectar go to the [Nectar Knowledge Base](https://support.ehelp.edu.au/support/solutions){target="_blank"} or visit the [Nectar Research Cloud Tutorials](https://tutorials.rc.nectar.org.au/){target="_blank"}. For details about OpenStack go to the [OpenStack Docs](https://docs.openstack.org/){target="_blank"}.
 
 ---
 

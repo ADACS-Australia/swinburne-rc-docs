@@ -1,5 +1,7 @@
 # Launching an instance
-Now that you have setup an ssh key pair and an ssh security group, we can launch an instance -- i.e. start a virtual machine (VM).
+
+!!! note "Remember"
+    **Before you launch an instance**, you should have an **ssh key pair** and an **ssh security group** otherwise you won't be able to access your virtual machine. Go back and create these if haven't already done so.
 
 ### Details
 On the left panel of the dashboard select the `Compute` tab, then select `Instances`. Here is where you will see and be able to manage any instances (VMs) that you have created. To create a new one press the `Launch Instance` button to bring up a 'Wizard'.
@@ -31,7 +33,7 @@ Users with projects approved as an astronomy allocation on the Swinburne zone wi
 ### Flavour
 We now get to choose a 'flavour' for our instance, which is basically a choice of sizing for the compute, memory and storage capacity of the VM. What you can select depends on your project quota, but everyone with a trial project should be able to use one of the small flavours.
 
-Let's select `t3.small` by pressing the up arrow button next to it.
+Let's select `m3.xsmall` by pressing the up arrow button next to it.
 
 ![](images/launch_instance_flavour.png)
 
