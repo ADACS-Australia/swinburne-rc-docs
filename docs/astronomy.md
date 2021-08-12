@@ -37,3 +37,5 @@ You can change projects from the **dashboard** via the **dropdown menu** on the 
 All projects that you are a member of will be listed here, including your trial project (unless you requested to convert it).
 
 ![](images/project-select.png)
+
+If you've been added to a project but don't see it in the list, try refreshing your page.
