@@ -39,3 +39,4 @@ All projects that you are a member of will be listed here, including your trial 
 ![](images/project-select.png)
 
 If you've been added to a project but don't see it in the list, try refreshing your page.
+If you can switch projects but cannot launch new instances in that project, please contact [Nectar Support](https://support.ehelp.edu.au/){target="_blank"}.

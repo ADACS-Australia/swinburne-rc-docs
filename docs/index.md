@@ -29,8 +29,9 @@ This means you can run 1 medium or 2 small virtual machines for three months. Or
 To get more resources, you need to join a full project or apply for one. Australian Austromers can request access to resources available only to them on the Swinburne zone. But we recommend going through the steps of [launching a simple virtual machine](getting-started.md) in your trial project before applying.
 
 ## Help
-- If you get stuck or just want more information, feel free to email us at <openstack@adacs.org.au>.
-- A training video is also available [here](https://adacs.org.au/project/openstack-training-session-2021/){target="_blank"}.
+- If you get stuck following the guide, or just want more information, feel free to email us at <openstack@adacs.org.au>.
+- A [training video](https://adacs.org.au/project/openstack-training-session-2021/){target="_blank"} is also available.
+- For technical issues with Nectar, you can submit a [support ticket](https://support.ehelp.edu.au/){target="_blank"}.
 
 ---
 
