@@ -1,9 +1,9 @@
-# Volumes
-Depening on your computing needs, the storage/disk space that is included in your instance may not be enough (30GB for most flavours). Furthermore, the root disk on images is NOT persistent, meaning that it is destroyed when you delete your VM.
+# Volume Storage
+Depening on your computing and data storage needs, the disk space that is included in your instance may not be enough (30GB for most flavours). Furthermore, the root disk on images is NOT persistent, meaning that it is destroyed when you delete your VM.
 
 A volume is additional storage that you can add to your instance, which IS persistent.
 In other words, data saved to the volume is not destroyed when you delete the instance it was attached to.
-It is also flexible in that it be attached to your virtual machine at any point, or to any other VM.
+It is also flexible in that it can be attached to your virtual machine at any point, or to any other VM.
 Think of it as a virtual external hard drive.
 
 ### Creating a volume

@@ -1,9 +1,9 @@
-# Adding a domain name/DNS record
-You can associate your instance with a *domain name* by creating a *DNS record*, which is easier to remember than an IP address.
+# Adding a domain name (DNS record)
+You can associate your instance with a **domain name** by creating a **DNS record**, which is easier to remember than an IP address.
 Also, if the IP address of your instance happens to change (e.g. because you had to delete and relaunch the VM from the same image), you can simply update the DNS record **once** to point to the new IP address.
 This is useful if you connect from multiple machines, or if you have given others access to your VM.
 
-For new projects and projects with allocations being renewed, a Nectar provided *DNS zone* will be created automatically for your project to use. (Trial projects do NOT have one.) They are typically in the format `<project-name>.cloud.edu.au.`
+For new projects and projects with allocations being renewed, a Nectar provided DNS zone will be created automatically for your project to use. (Trial projects do NOT have one.) They are typically in the format `<project-name>.cloud.edu.au.`
 
 You can find your DNS zone in the dashboard by navigating to `Project > DNS > Zones` in the sidebar. Then, to create a domain name for your instance, select `Create Record Set`.
 

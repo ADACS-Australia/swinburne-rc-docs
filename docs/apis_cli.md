@@ -1,4 +1,4 @@
-# OpenStack APIs + CLI
+# OpenStack APIs and Command Line Interface
 All of the functionality provided by the dashboard is also accessible through the OpenStack APIs (e.g.  launching instances, creating images, etc). They are useful for scripting/automating your cloud configuration and setup. Many cloud configuration and automation software packages already exist that make use of these APIs (e.g. Terraform, Packer) but even if you have no need for them, you may find the OpenStack Command Line Interface (CLI) useful and/or more powerful than the dashboard, which makes use of the OpenStack APIs.
 
 ## Credentials
@@ -65,18 +65,24 @@ To generate a new password click the `Rest Password` button.
 !!! important
     Your credentials password will only appear once! Make sure you save it somewhere safe immediately. If you lose it, or forget it, you can always generate a new one.
 
-To use your credentials, simply load the script into your environment and enter your credentials password when prompted
+To use your credentials, simply load the script into your environment and enter your credentials password when prompted.
 
 ```console
 $ source ~/Download/my-project-openrc.sh
 Please enter your OpenStack Password for project my-project as user your@email.edu.au:
 ```
 
+If all went well, you won't see anything special. But you can check to see if any of the environment variables were set. For example,
+```console
+$ echo $OS_PROJECT_NAME
+my-project
+```
+
 !!! tip
     You can edit your script so that `OS_PASSWORD` is hard-coded and you are not prompted each time you load your credentials.
 
 ### Application Credentials
-You can also generate credentials suitable for applications to authenticate with the APIs, without having to expose your main/personal credentials. Application credentials can be easily revoked and recreated, they can have an automatic expiry, and they are more secure than user credentials since, by default, they do not allow certain actions to be performed (e.g. creating additional application credentials).
+Alternatively, you can also generate credentials suitable for applications to authenticate with the APIs, without having to expose your main/personal credentials. Application credentials can be easily revoked and recreated, they can have an automatic expiry, and they are more secure than user credentials since, by default, they do not allow certain actions to be performed (e.g. creating additional application credentials).
 
 To generate an application credential, go to `Identity > Application Credentials` on the dashboard, then select `+ Create Application Credential`.
 
@@ -107,17 +113,17 @@ The OpenStack Command Line Interface gives you the power to do everything that y
 ```console
 $ pip install python-openstackclient
 ```
-Next, load your credentials into your environment
+Next, load your credentials into your environment. You can use either your user credentials or application credentials.
 ```console
 $ source my-project-openrc.sh
 ```
 Now you can run `openstack` commands to view and manage your Nectar resources.
 
-For example, to create an `m3.small` VM from the official Nectar Centos 7 image
+For example, to create an `m3.xsmall` VM from the official Nectar Centos 7 image
 ```console
 $ openstack server create my_first_vm \
   --image "NeCTAR CentOS 7 x86_64"    \
-  --flavor "m3.xmall"                 \
+  --flavor "m3.xsmall"                 \
   --security-group "SSH"              \
   --key-name "nectarkey"
 ```

@@ -44,16 +44,17 @@ nav:
 
   - Astronomy users:
     - Astronomy projects/applications: 'astronomy.md'
+    - ADACS image catalogue: 'image-catalogue.md'
 
   - Other useful tips:
-    - Hosts + SSH config: 'ssh-config.md'
-    - GUIs + X11 forwarding: 'gui-x11.md'
+    - SSH config: 'ssh-config.md'
+    - GUIs and X11 forwarding: 'gui-x11.md'
     - Viewing jupyter notebooks: 'jupyter-notebooks.md'
     - Adding project members: 'members.md'
 
   - Advanced workflows:
-    - Volumes: 'volumes.md'
-    - DNS: 'dns.md'
+    - Volume storage: 'volumes.md'
+    - Domain names: 'dns.md'
     - Networks: 'networks.md'
-    - APIs + CLI: 'apis_cli.md'
+    - APIs and Command Line Interface: 'apis_cli.md'
     - Cloud Automation: 'automation.md'
