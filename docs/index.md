@@ -10,7 +10,7 @@ For new users, we recommend following the steps in this guide carefully, using a
 ## Introduction
 The Swinburne Research Cloud is one of the physical nodes of the national **Nectar Research Cloud**, which is implemented and managed using **OpenStack**, an open source cloud computing framework.
 
-It is what is know as **Infrastructure-as-a-Service** (IaaS), providing researchers with on-demand, raw IT infrastructure such as CPUs, networking and storage, in a flexible and scalable manner.
+It is an example of **Infrastructure-as-a-Service** (IaaS), providing researchers with on-demand, raw IT infrastructure such as CPUs, networking and storage, in a flexible and scalable manner.
 In simpler terms: it gives you access to **virtual hardware that you can administer in whatever way you choose**.
 
 Typical uses include:
