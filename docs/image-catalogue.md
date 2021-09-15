@@ -10,6 +10,7 @@ These images are available to anyone. You can find them via the search box when 
 - [ADACS - Ubuntu 18.04 LTS (Bionic) amd64](#adacs-ubuntu-1804-lts-bionic-amd64)
 - [ADACS Astronomy A - Ubuntu 18.04 LTS (Bionic) amd64](#adacs-astronomy-a-ubuntu-1804-lts-bionic-amd64)
 - [ADACS Astronomy B - Ubuntu 18.04 LTS (Bionic) amd64](#adacs-astronomy-b-ubuntu-1804-lts-bionic-amd64)
+- [ADACS Astronomy C - Ubuntu 18.04 LTS (Bionic) amd64](#adacs-astronomy-c-ubuntu-1804-lts-bionic-amd64)
 
 
 #### ADACS - Ubuntu 18.04 LTS (Bionic) amd64
@@ -59,10 +60,17 @@ Same as the basic image, but also includes installations of these common astrono
 - fv (ftools FITS viewer)
 - HEASoft/Xspec
 - SAS (XMM-Newton)
-- CIAO & CALDB
 
 !!! Note
-    The conda installation included with SAS is an older version (4.3). This means that the command `conda init` implemented in newer versions (4.6.12 and later) is not availabe, and thus the other conda commands are not available unless a conda environment has already been activated. To activate the default environment, type `conda_activate`, which is an alias for `source <path to conda>/bin/activate`.
+    The conda installation included with SAS is an older version (4.3). This means that the command `conda init` implemented in newer versions (4.6.12 and later) is not availabe, and thus conda commands are not available unless a conda environment has already been activated. To activate the default environment, type `conda_activate`, which is an alias for `source <path to conda>/bin/activate`.
+
+#### ADACS Astronomy C - Ubuntu 18.04 LTS (Bionic) amd64
+Same as the basic image, but also includes installations of these common astronomy tools:
+
+- SAOImage DS9
+- SExtractor (Source-Extractor)
+- fv (ftools FITS viewer)
+- CIAO & CALDB
 
 ---
 
@@ -73,6 +81,7 @@ These images contain licensed/proprietary software. Please contact <openstack@ad
 - [ADACS (with Intel) - Ubuntu 18.04 LTS (Bionic) amd64](#adacs-with-intel-ubuntu-1804-lts-bionic-amd64)
 - [ADACS (with Mathematica) - Ubuntu 18.04 LTS (Bionic) amd64](#adacs-with-mathematica-ubuntu-1804-lts-bionic-amd64)
 - [ADACS (with MATLAB) - Ubuntu 18.04 LTS (Bionic) amd64](#adacs-with-matlab-ubuntu-1804-lts-bionic-amd64)
+- [ADACS (with ABAQUS) - CentOS 8 x86_64](#adacs-with-abaqus-centos-8-x86_64)
 - [ADACS (with Intel + IDL + Conda) - Ubuntu 18.04 LTS (Bionic) amd64](#adacs-with-intel-idl-conda-ubuntu-1804-lts-bionic-amd64)
 - [ADACS Astronomy A (with Intel + IDL) - Ubuntu 18.04 LTS (Bionic) amd64](#adacs-astronomy-a-with-intel-idl-ubuntu-1804-lts-bionic-amd64)
 
@@ -134,6 +143,9 @@ Includes an installation of MATLAB R2019b, along with the following products:
 
 !!! Note
     Contact <openstack@adacs.org.au> if you require MATLAB products that are not in this list.
+
+#### ADACS (with ABAQUS) - CentOS 8 x86_64
+Includes an installation of Abaqus FEA 2018.
 
 #### ADACS (with Intel + IDL + Conda) - Ubuntu 18.04 LTS (Bionic) amd64
 A combination of the [basic](#adacs-ubuntu-1804-lts-bionic-amd64) image with the [Intel](#adacs-with-intel-ubuntu-1804-lts-bionic-amd64) and [IDL](#adacs-with-idl-ubuntu-1804-lts-bionic-amd64) images above.
