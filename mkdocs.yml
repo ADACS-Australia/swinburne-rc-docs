@@ -52,6 +52,10 @@ nav:
     - Viewing jupyter notebooks: 'jupyter-notebooks.md'
     - Adding project members: 'members.md'
 
+  - Applications:
+    - Generic Nectar Apps: 'apps.md'
+    - Custom ADACS Apps: 'adacs-apps.md'
+
   - Advanced workflows:
     - Volume storage: 'volumes.md'
     - Domain names: 'dns.md'
