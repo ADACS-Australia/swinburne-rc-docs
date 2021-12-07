@@ -26,7 +26,7 @@ This means you can run 1 medium or 2 small virtual machines for three months. Or
 
 
 ### Astronomers
-To get more resources, you need to join a full project or apply for one. Australian Austromers can request access to resources available only to them on the Swinburne zone. But we recommend going through the steps of [launching a simple virtual machine](getting-started.md) in your trial project before applying.
+To get more resources, you need to join a full project or apply for one. Australian Astronomers can request access to resources available only to them on the Swinburne zone. But we recommend going through the steps of [launching a simple virtual machine](getting-started.md) in your trial project before applying.
 
 ## Help
 - If you get stuck following the guide, or just want more information, feel free to email us at <openstack@adacs.org.au>.
