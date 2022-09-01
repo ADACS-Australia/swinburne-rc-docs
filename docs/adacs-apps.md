@@ -18,6 +18,7 @@ Find the zip archive from the latest release, and copy its link address (you can
 
 On your Nectar Dashboard, navigate to `Applications > Manage > Packages`.
 From here you can upload, manage and delete custom apps. To upload a new application, select `+ Import Package`.
+(Or click [here](https://dashboard.rc.nectar.org.au/app-catalog/packages/upload){target="_blank"}).
 
 ![](images/import_package.png)
 
@@ -43,6 +44,23 @@ Select `Deploy This Environment` to begin the automation procedure. This involve
 
 Once the procedure is complete, your self-hosted runner should appear in your GitHub or GitLab repository settings, and will be ready to receive jobs.
 
-### Destroying an app environment
+## The Littlest JupyterHub
+*"A simple JupyterHub distribution for a small (0-100) number of users on a single server."*
+
+This murano application installs and configures a server with [The Littlest JupyterHub](https://tljh.jupyter.org/en/latest/){target="_blank"}.
+
+For more details see the [GitHub repository](https://github.com/ADACS-Australia/murano-jupyterhub){target="_blank"}.
+
+### Upload
+As with the self-hosted runners [above](#github-and-gitlab-self-hosted-runners), each release contains a `zip` file that can be uploaded to your Nectar/OpenStack account. You can upload a release directly using a URL.
+
+On you Nectar/OpenStack account, navigate to [`Applications > Manage > Packages > Import Package`](https://dashboard.rc.nectar.org.au/app-catalog/packages/upload){target="_blank"}, and choose URL as the Package Source.
+Copy and paste the following link address:
+
+https://github.com/ADACS-Australia/murano-jupyterhub/releases/latest/download/jupyterhub.zip
+
+Alternatively, go to the releases for this repo, and select your preferred release. Under assests, right click on `jupyterhub.zip` and then copy the link address.
+
+## Destroying an app environment
 You can destroy the application enviroment from `Application > Applications > Environments` page on your Nectar Dashboard.
 This will destroy the VM and any other cloud resources associated with it (such as security groups) in one go. We recommend removing them in this way, rather than destroying each component manually, one-by-one.
